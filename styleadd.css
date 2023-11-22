@@ -1,0 +1,96 @@
+
+       /* Reset CSS để loại bỏ các margin và padding mặc định */
+    body, h1, h2, h3, p {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Bố cục chung của trang */
+    body {
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        flex-direction: column;
+        height: 100vh; /* Đảm bảo trang web trải dài toàn màn hình */
+    }
+
+    /* Header */
+    header {
+        font-family: 'Montserrat', sans-serif;
+        background-color:white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    /* Content */
+    .content {
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        flex: 1; /* Content trải dài để lấp đầy phần còn lại của trang */
+    }
+
+    /* Left */
+    aside {
+        font-family: 'Montserrat', sans-serif;
+        background-color:white;
+        padding: 20px;
+        width: 200px;
+    }
+
+    /* Center */
+    main {
+        font-family: 'Montserrat', sans-serif;
+        background-color:white;
+        flex: 1;
+        padding: 20px;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+
+
+    form {
+        font-family: 'Montserrat', sans-serif;
+        display: grid;
+        gap: 10px;
+    }
+
+    label {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+
+    input {
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px; /* Adjust margin as needed */
+    }
+
+    .button-container .button {
+        flex: 1;
+        margin-right: 10px; /* Adjust margin between buttons as needed */
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .button-container .cancel-button {
+        background-color: #999; /* Change color to your preference */
+    }
+
+    .button-container .save-button {
+        background-color: #4CAF50; /* Change color to your preference */
+    }
