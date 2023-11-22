@@ -72,8 +72,10 @@
             padding: 10px;
         }
         .add-button{
+            font-family: 'Montserrat', sans-serif;
             width: 200px;
-            height: 200px;
+            height: 25px;
+            border-radius: 10px;
             background-color: orange;
             color: white;
         }

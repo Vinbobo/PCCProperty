@@ -88,9 +88,12 @@
     }
 
     .button-container .cancel-button {
-        background-color: #999; /* Change color to your preference */
+        background-color: yellow; /* Change color to your preference */
+        color:black;
+        text-align: center;
     }
 
     .button-container .save-button {
-        background-color: #4CAF50; /* Change color to your preference */
+        background-color: lightskyblue; /* Change color to your preference */
+        color:black;
     }

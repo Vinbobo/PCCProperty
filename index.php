@@ -24,6 +24,14 @@
             </ul>
         </aside>
         <main>
+            <h1>DANH SÁCH HỢP ĐỒNG</h1>
+            <div class="search-container">
+                <form action="search.php" method="GET"> <!-- Change 'search.php' to the actual file for handling search -->
+                    <input type="text" name="search">
+                    <button class="add-button" type="submit">Search</button>
+                </form>
+            </div>
+            <br>
         <button class="add-button" onclick="location.href='add_contract.php'" >Thêm</button>
         <?php
         // Connect to the database (replace with your actual database connection code)
@@ -36,7 +44,7 @@
         }
 
         // Fetch and display the list of contracts
-        $sql = "SELECT * FROM full_contractg ORDER BY ID DESC";
+        $sql = "SELECT * FROM full_contractg ORDER BY Full_Contract_Code ASC";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
